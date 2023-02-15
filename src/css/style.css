@@ -1,0 +1,390 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header header"
+        "hero hero hero hero"
+        "about about about about"
+        "services services services services"
+        "projects projects projects projects"
+        "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+/* HEADER */
+
+.header {
+    grid-area: header;
+}
+
+.header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    min-height: 7.5rem;
+}
+
+.header .logo, .fa-code{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+
+.header .logo:hover {
+    color: #1bc743;
+}
+
+/* HEADER */
+
+/* HERO */
+
+.hero {
+    grid-area: hero;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    background: url(../images/imagem-pc-mesa-principal.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.hero h2 {
+    display: inline-block;
+    padding: 10px 35px;
+    color: #fff;
+    border: 8px solid #1bc743;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.8em;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s; 
+} 
+
+.hero h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.hero::after {
+    content: url(../images/seta_preta.png);
+    position: absolute;
+    height: 35px;
+    bottom: 40px;
+    animation: downarrow 0.7s infinite alternate ease-in-out;
+}
+
+@keyframes downarrow {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.4;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* HERO */
+
+
+/* ABOUT */
+
+.about {
+    display: grid;
+    grid-area: about;
+    grid-template-columns: 1fr 1fr;
+    
+    background-color: #fff;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+    background-color: rgb(50, 168, 89);
+    border-radius: 10px;
+}
+
+.about .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20%;
+}
+
+
+.about .item h3 {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.about .item p {
+    margin: 25px 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 30px;
+}
+
+.about .item a {
+    align-self: flex-start;
+}
+
+.about .item .btn-know-more {
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.about .item .btn-know-more:hover {
+    font-weight: 700;
+}
+
+.about .image {
+    height: 100%;
+    width: 100%;
+    margin-right: 15px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.about .image.right {
+    background: url(../images/Andressa_Lima_desenvolvedor_software.jpg) center center no-repeat;
+    
+
+}
+
+@media (max-width: 768px) {
+    .about .item {
+        text-align: center;
+    }
+
+    .about .item a {
+        align-self: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+/* ABOUT */
+
+/* SERVICES*/
+
+.services {
+    grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 20px;
+    margin-right: 15px;
+    margin-left: 15px;  
+}
+
+.services .service {
+    padding: 7rem 1rem;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.services .service img {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.services .service p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 400px;
+    margin: 20px auto 0;
+}
+
+.services .service .services-info h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    color:#fff;
+}
+
+.services .service:nth-child(1) {
+    background: rgb(176, 121, 227);
+}
+
+.services .service:nth-child(2) {
+    background-color: rgb(212, 229, 124);
+}
+
+.services .service:nth-child(3) {
+    background-color: rgb(182, 216, 255);
+}
+
+.services .service:nth-child(4) {
+    background: rgb(109, 136, 203);
+}
+
+.services .service:nth-child(5) {
+    background: rgb(213, 111, 116);
+}
+
+.services .service:nth-child(6) {
+    background: rgb(130, 126, 217);
+}
+
+
+@media (max-width: 450px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* SERVICES*/
+
+/* PROJECTS */
+.projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.projects .project {
+    padding: 3rem 3rem;
+    
+}
+
+.projects .project img {
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border:  4px solid #030c0a;
+}
+
+.projects .project h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 400px;
+    margin: 20px auto 0;
+    
+}
+
+.projects .project .descricao span {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 25px;
+    margin: 20px auto 0;
+    
+} 
+
+.projects .project img {
+    
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.projects .project a:hover img {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/* PROJECTS */
+
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    background: linear-gradient(to right, rgb(151, 116, 233), hsl(134, 28%, 72%) 10%, skyblue 90%, rgb(151, 150, 234) 100%);
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.footer h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.footer nav {
+    margin: 50px 0;
+}
+
+.footer nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.footer nav ul li a {
+    margin: 20px;
+    font-weight: 500;
+    font-synthesis: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.footer nav ul li a:hover {
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer .social i {
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.footer .social a {
+    margin: 20px;
+}
+
+.footer .social a:hover {
+    color: #fff;
+}
+
+.footer .attribution {
+    padding-top: 15px;
+    color: black;
+    
+}
