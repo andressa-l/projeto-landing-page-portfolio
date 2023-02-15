@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page com flex e grid com portfólio</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="./index.html">
+                <h1 class="logo"><i class="fa fa-code"></i>Andressa Lima</h1>
+            </a>
+
+            <nav>
+                <!-- Menu Hamburguer -->
+                <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
+
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+
+
+                <ul class="links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Fron-end Developer Web</h2>
+    </section>
+
+    <section class="about" id="about">
+        <div class="item">
+            <h3>Sobre</h3>
+            <p>Sejam Bem vind@s. Sou engenheira de software em formação, programo Front-end e possuo conhecimentos em Back-end. Procuro
+                estar em constante aprendizado criando experiências novas com projetos pessoais, nos quais alinho a
+                teoria e a prática. Como desenvolvedora Front end tenho facilidade em trabalhar em grupo e estou sempre
+                disposta a aprender, além disso, sou apaixonada pela área tenho como objetivo trabalhar como
+                desenvolvedora. 
+            </p>
+
+            <a href="https://www.linkedin.com/in/andressa-lima-b18988253/" class="btn-know-more">Para saber mais pouquinho sobre os meus projetos ou sobre mim <span>clique aqui.</span></a>
+        </div>
+
+        <div class="image right"></div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="service">
+            <div class="services-info">
+                <a href="#"><img src="./src/images/html-5.png" alt="bolinha"></a>
+                <h3> / HTML5 / Carregamento concluído com êxito!</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="services-info">
+                <a href="#"><img src="./src/images/css.png" alt="bolinha2"></a>
+                <h3> / CSS3 / Carregamento concluído com êxito!</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="services-info">
+                <a href="#"><img src="./src/images/java-script.png" alt="bolinha3"></a>
+                <h3> / JavaScript / Carregando...</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="services-info">
+                <a href="#"><img src="./src/images/git-github.jpeg" alt="bolinha4"></a>
+                <h3> / Git GitHub / Falta pouco, aguarde...</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="services-info">
+                <a href="#"><img src="./src/images/react.png" alt="bolinha5"></a>
+                <h3> / React / Aguardando carregamento...</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="services-info">
+                <a href="#"><img src="./src/images/bolinha2.png" alt=""></a>
+                <h3>Em breve...</h3>
+                <p></p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="project">
+            <a href="https://andressa-l.github.io/nft-card-initial/" target="_blank">
+                <img src="./src/images/card-nft.png" alt="card nft">
+            </a>
+            <div class="descricao">
+                <h1 class="nome"><span>NFT Card</span></h1>
+                <h2 class="cargo">Essa proposta ficou muito além do esperado, apesar de ter sido complicado no começo, aprendi muito sobre posicionamento de itens, além das várias maneiras de usar o background. Nesse sentido, foi desafiador mas pude aprender sobre HTML e CSS flexbox.</h2>
+            </div>
+        </div>
+        <div class="project">
+            <a href="https://andressa-l.github.io/gerador-de-conselhos/" target="_blank">
+                <img src="./src/images/gerador-conselhos.png" alt="gerador de conselhos">
+            </a>
+            <div class="descricao">
+                <h1 class="nome"><span>Gerador de conselhos</span></h1>
+                <h2 class="cargo">Usei HTML, CSS  com ênfase no flexbox o projeto ainda está em desenvolvimento, visto que, a proposta de entrega seria clicar no dado e aparecer um novo conselho, ou seja app precisa consumir API para funcionar como deveria. Em breve o projeto seguira conforme o planejado, com o avanço dos estudos. No mais, ficou com o design muito atrativo e atendeu ao esperado, espera-se incrementar com Java Script.
+                </h2>
+            </div>
+        </div>
+        <div class="project">
+            <a href="https://andressa-l.github.io/layuot-menu-bank/" target="_blank">
+                <img src="./src/images/the-bank-menu.png" alt="layout menu">
+            </a>
+            <div class="descricao">
+                <h1 class="nome"><span>Layout Menu</span></h1>
+                <h2 class="cargo">O projeto correu bem, pude ter uma noção muito boa sobre menu e como posicioná-lo na página usando o flexbox.</h2>
+            </div>
+        </div>
+        <div class="project">
+            <a href="https://andressa-l.github.io/mini-portfolio-andressa/" target="_blank">
+                <img src="./src/images/mini-portfolio.png" alt="mini portfolio">
+            </a>
+            <div class="descricao">
+                <h1 class="nome"><span>Mini Portfólio</span></h1>
+                <h2 class="cargo">Usei HTML, CSS e Java Script
+                    Coloquei em prática toda experiência que obtive com HTML e CSS e pude ver a mágica acontecer com Java Script, a página direciona para as minhas redes socias e currículo.
+                    Atendeu ao esperado e trouxe alguns conhecimentos necessários de Java Script.
+                </h2>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer" id="contact">
+        <h4>Andressa Lima</h4>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="social">
+            <a href="mailto:gregorio.andressa.lima@gmail.com" target="_blank">
+                <i class="far fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/andressa-lima-b18988253/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/andressa-l" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="attribution">
+            Coded by <a href="#">Andressa Lima</a>.
+          </div>
+    </footer>
+
+</body>
+
+</html>
